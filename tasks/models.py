@@ -8,3 +8,6 @@ class Task(models.Model):
     def __str__(self):
         return self.text[:50]
     
+# ^el metodo __str__ se usa para que cuando se imprima el objeto, 
+# se muestre el texto de la tarea
+    

@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # acabo de crear una aplicacion que se llama tasks
+# acabo de crear una aplicacion que se llama tasks
+# siempre que se crea una aplicacion, hay que añadirla a la lista de aplicaciones instaladas
     'tasks',
 ]
 
@@ -56,7 +57,7 @@ ROOT_URLCONF = 'django_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
